@@ -3,6 +3,7 @@ package tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.junit5.SoftAssertsExtension;
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,6 +19,7 @@ import static pages.PracticeFormPage.assertPracticeForm;
 public class PracticeFormTests extends TestBase {
     @Test
     @Tag("web")
+    @DisplayName("Check form values the same as expected")
     public void practiceFormTest() {
         Configuration.assertionMode = SOFT;
         Map<String, String> settings = getExpectedSettings();
