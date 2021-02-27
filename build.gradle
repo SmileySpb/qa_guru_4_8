@@ -35,7 +35,7 @@ tasks.withType(Test) {
 
 task runWebTests(type: Test) {
     useJUnitPlatform {
-        includeTags 'Web'
+        includeTags 'web'
     }
 }
 
