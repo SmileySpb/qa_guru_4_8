@@ -16,8 +16,6 @@ import static pages.PracticeFormPage.assertPracticeForm;
 
 @ExtendWith({SoftAssertsExtension.class})
 public class PracticeFormTests extends TestBase {
-    ;
-
     @Test
     @Tag("web")
     public void practiceFormTest() {
